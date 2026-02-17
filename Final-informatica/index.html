@@ -9,14 +9,9 @@
 </head>
 <body>
 
-  <!-- Encabezado -->
-  <header class="bg-primary text-white text-center py-4">
-    <h1>Bienvenido a mi sitio web</h1>
-    <p>Este es un espacio pensado para disfrutar de la comida sin complicaciones, donde cada plato nace de lo cotidiano y se transforma en algo especial.</p>
-    <p>Acá vas a encontrar recetas para todos los momentos: platos principales, guarniciones que acompañan, postres que reconfortan, opciones saludables y meriendas ideales para compartir o disfrutar a solas.</p>
-    <p>Cocinar no es solo seguir pasos, es crear, probar, equivocarse y volver a intentar. Esta página invita a eso: a animarse, a experimentar y a disfrutar del proceso tanto como del resultado final.</p>
-    <p>Pasá, explorá y sentite como en casa.</p>
-  </header>
+<!-- Encabezado --> 
+ <header class="text-white text-center py-5 shadow" style="background-color: #299a57;"> 
+  <h1 class="fw-bold mb-3">¿Que comemos hoy?</h1> </header>
 
 <!-- Navbar centrada estilo hamburguesa -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,7 +31,6 @@
           <ul class="dropdown-menu text-center" aria-labelledby="platosDropdown">
             <li><a class="dropdown-item" href="platos/carnes.html">Carnes</a></li>
             <li><a class="dropdown-item" href="platos/pastas.html">Pastas</a></li>
-            <li><a class="dropdown-item" href="platos/pescados.html">Pescados</a></li>
             <li><a class="dropdown-item" href="platos/vegetarianos.html">Vegetarianos</a></li>
           </ul>
         </li>
@@ -57,10 +51,9 @@
           <a class="nav-link" href="postres/index.html">Postres</a>
           <a class="nav-link dropdown-toggle" href="#" id="postresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
           <ul class="dropdown-menu text-center" aria-labelledby="postresDropdown">
-            <li><a class="dropdown-item" href="postres/tortas.html">Tortas</a></li>
-            <li><a class="dropdown-item" href="postres/galletas.html">Galletas</a></li>
+            <li><a class="dropdown-item" href="postres/tortas.html">Faciles</a></li>
+            <li><a class="dropdown-item" href="postres/galletas.html">Elavorado</a></li>
             <li><a class="dropdown-item" href="postres/sin-horno.html">Sin horno</a></li>
-            <li><a class="dropdown-item" href="postres/frutas.html">Frutas</a></li>
           </ul>
         </li>
 
@@ -69,7 +62,6 @@
           <a class="nav-link" href="saludables/index.html">Saludables</a>
           <a class="nav-link dropdown-toggle" href="#" id="saludablesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
           <ul class="dropdown-menu text-center" aria-labelledby="saludablesDropdown">
-            <li><a class="dropdown-item" href="saludables/sin-azucar.html">Sin azúcar</a></li>
             <li><a class="dropdown-item" href="saludables/sin-gluten.html">Sin gluten</a></li>
             <li><a class="dropdown-item" href="saludables/vegano.html">Vegano</a></li>
             <li><a class="dropdown-item" href="saludables/light.html">Light</a></li>
@@ -84,7 +76,6 @@
             <li><a class="dropdown-item" href="meriendas/rapidas.html">Rápidas</a></li>
             <li><a class="dropdown-item" href="meriendas/dulces.html">Dulces</a></li>
             <li><a class="dropdown-item" href="meriendas/saladas.html">Saladas</a></li>
-            <li><a class="dropdown-item" href="meriendas/para-llevar.html">Para llevar</a></li>
           </ul>
         </li>
 
@@ -92,18 +83,68 @@
     </div>
   </div>
 </nav>
+<section class="container my-5 bg-white rounded shadow-sm p-4"> 
+  <div class="text-center">   
+    <main class="container my-5">
+    <div class="row">
+      <h2>🍽️ Bienvenid@ a tu lugar de cocina</h2>
+      <p>
+    </div>
+  <p class="lead text-secondary"> Este es un espacio pensado para disfrutar de la comida sin complicaciones, donde cada plato nace de lo cotidiano y 
+    se transforma en algo especial. Acá vas a encontrar recetas para todos los momentos: platos principales, guarniciones que acompañan, postres que 
+    reconfortan, opciones saludables y meriendas ideales para compartir o disfrutar a solas. Cocinar no es solo seguir pasos, es crear, probar, equivocarse 
+    y volver a intentar. Esta página invita a eso: a animarse, a experimentar y a disfrutar del proceso tanto como del resultado final. Pasá, explorá y sentite como en casa. </p> 
+  </div> 
+</section>
 
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Elegidos del dia</h2>
+  
+    
+    <div id="recetasCarousel" class="carousel slide w-75 mx-auto mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <!-- Imagen 1 -->
+        <div class="carousel-item active">
+          <a href="receta-pizza.html">
+            <img src="imagenes/imagen-pizza-galeria.jpg" class="d-block w-100" alt="Pizza casera">
+          </a>
+        </div>
+        
+        <!-- Imagen 2 -->
+        <div class="carousel-item">
+          <a href="receta-ensalada.html">
+            <img src="imagenes/bruschettas-galeria.png" class="d-block w-100" alt="Bruschettas">
+          </a>
+        </div>
+        
+        <!-- Imagen 3 -->
+        <div class="carousel-item">
+          <a href="receta-pasta.html">
+            <img src="imagenes/muffins-galeria.png" class="d-block w-100" alt="Muffins de arandanos">
+          </a>
+        </div>
+      </div>
+      
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#recetasCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#recetasCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
 
-       
-  <!-- Contenido principal -->
-  <main class="container my-5">
+  <!-- Secciones -->
+  <div class="container my-5">
     <div class="row">
       <section id="seccion1" class="col-md-4 mb-4">
         <div class="card">
           <div class="card-body">
-            <h2 class="card-title">Sección 1</h2>
-            <p class="card-text">Texto genérico para esta sección.</p>
-            <a href="#" class="btn btn-primary">Leer más</a>
+            <h2 class="card-title">Queres conocer los secretos del leudado?</h2>
+            <p class="card-text">Descubre los secretos para que tus masas y todas tus recetas con leudado queden suaves, esponjosas y perfectas.</p>
+            <a href="#" class="btn btn-outline-success">Leer más</a>
           </div>
         </div>
       </section>
@@ -111,9 +152,9 @@
       <section id="seccion2" class="col-md-4 mb-4">
         <div class="card">
           <div class="card-body">
-            <h2 class="card-title">Sección 2</h2>
-            <p class="card-text">Texto genérico para esta sección.</p>
-            <a href="#" class="btn btn-success">Leer más</a>
+            <h2 class="card-title">Como apliar tu paladar a sabores nuevos.</h2>
+            <p class="card-text">Salir de los sabores de siempre no es fácil, por eso te compartimos tips simples y recetas pensadas para ayudarte a incorporar ingredientes nuevos de forma gradual, más saludable y sin perder sabor.</p>
+            <a href="#" class="btn btn-outline-success">Leer más</a>
           </div>
         </div>
       </section>
@@ -121,14 +162,16 @@
       <section id="seccion3" class="col-md-4 mb-4">
         <div class="card">
           <div class="card-body">
-            <h2 class="card-title">Sección 3</h2>
-            <p class="card-text">Texto genérico para esta sección.</p>
-            <a href="#" class="btn btn-danger">Leer más</a>
+            <h2 class="card-title">Necesitas esa receta dulce que te salve de un apuro?</h2>
+            <p class="card-text">Descubre esas recetas que te salvan de un apuro y que con pocos ingredientes, te haga quedar bien a la hora del te</p>
+            <a href="#" class="btn btn-outline-success">Leer más</a>
           </div>
         </div>
       </section>
     </div>
-  </main>
+  </div>
+
+  
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">

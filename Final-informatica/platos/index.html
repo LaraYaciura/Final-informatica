@@ -8,24 +8,75 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="../index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <!-- Navbar hamburguesa -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container justify-content-center">
-      <a class="navbar-brand" href="../index.html">Inicio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPlatos">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="menuPlatos">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="carnes.html">Carnes</a></li>
-          <li class="nav-item"><a class="nav-link" href="pastas.html">Pastas</a></li>
-          <li class="nav-item"><a class="nav-link" href="pescados.html">Pescados</a></li>
-          <li class="nav-item"><a class="nav-link" href="vegetarianos.html">Vegetarianos</a></li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+      <ul class="navbar-nav">
+
+        <!-- Platos -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="/Final-Lara/Final-informatica/platos/index.html">Platos</a>
+          <a class="nav-link dropdown-toggle" href="#" id="platosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="platosDropdown">
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/platos/carnes.html">Carnes</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/platos/pastas.html">Pastas</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/platos/vegetarianos.html">Vegetarianos</a></li>
+          </ul>
+        </li>
+
+        <!-- Guarniciones -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="/Final-Lara/Final-informatica/guarniciones/index.html">Guarniciones</a>
+          <a class="nav-link dropdown-toggle" href="#" id="guarnicionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="guarnicionesDropdown">
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/guarniciones/papas.html">Papas</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/guarniciones/verduras.html">Verduras</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/guarniciones/arroces.html">Arroces</a></li>
+          </ul>
+        </li>
+
+        <!-- Postres -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="/Final-Lara/Final-informatica/postres/index.html">Postres</a>
+          <a class="nav-link dropdown-toggle" href="#" id="postresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="postresDropdown">
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/postres/tortas.html">Fáciles</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/postres/galletas.html">Elaborados</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/postres/sin-horno.html">Sin horno</a></li>
+          </ul>
+        </li>
+
+        <!-- Saludables -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="/Final-Lara/Final-informatica/saludables/index.html">Saludables</a>
+          <a class="nav-link dropdown-toggle" href="#" id="saludablesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="saludablesDropdown">
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/saludables/sin-gluten.html">Sin gluten</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/saludables/vegano.html">Vegano</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/saludables/light.html">Light</a></li>
+          </ul>
+        </li>
+
+        <!-- Meriendas -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="/Final-Lara/Final-informatica/meriendas/index.html">Meriendas</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/meriendas/rapidas.html">Rápidas</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/meriendas/dulces.html">Dulces</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/meriendas/saladas.html">Saladas</a></li>
+          </ul>
+        </li>
+
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Encabezado -->
   <header class="bg-primary text-white text-center py-4">
