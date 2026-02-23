@@ -10,8 +10,23 @@
 <body>
 
 <!-- Encabezado --> 
- <header class="text-white text-center py-5 shadow" style="background-color: #66d163;"> 
-  <h1 class="fw-bold mb-3">¿Que comemos hoy?</h1> </header>
+  <header>
+<div class="container-fluid p-0">
+  <div class="position-relative">
+    <!-- Imagen de fondo -->
+    <img src="../Final-informatica/imagenes/banner.png" 
+         class="w-100" 
+         style="height:400px; object-fit:cover;" 
+         alt="Guarniciones deliciosas">
+
+    <!-- Texto encima -->
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1 class="fw-bold">¿Qué comemos hoy?</h1>
+    
+    </div>
+  </div>
+</div>
+</header>
 
 <!-- Navbar centrada estilo hamburguesa -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -100,7 +115,7 @@
         
         <!-- Imagen 1 -->
         <div class="carousel-item active">
-          <a href="../platos/vegetariano.html">
+          <a href="/platos/vegetariano.html">
             <img src="imagenes/imagen-pizza-galeria.jpg" class="d-block w-100" alt="Pizza casera">
           </a>
         </div>
