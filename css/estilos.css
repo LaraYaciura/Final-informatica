@@ -1,0 +1,24 @@
+h2{
+  color:rgb(175, 102, 163)
+}
+
+.btn-violeta {
+  --btn-color: #6A5ACD; /* color principal */
+
+  color: white;                     /* texto blanco inicial */
+  background-color: var(--btn-color); /* fondo violeta */
+  border: 2px solid var(--btn-color); /* borde del mismo color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;                 /* letra fina */
+  text-decoration: none;            /* sin subrayado */
+  transition: all 0.3s;             /* animación suave */
+}
+
+/* Efecto al pasar el cursor */
+.btn-violeta:hover {
+  color: var(--btn-color);          /* texto del color principal */
+  background-color: white;          /* fondo blanco */
+  border-color: var(--btn-color);   /* borde del color principal */
+}

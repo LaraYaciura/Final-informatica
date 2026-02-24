@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Encabezado --> 
+  <header>
+<div class="container-fluid p-0">
+  <div class="position-relative">
+    <!-- Imagen de fondo -->
+    <img src="../Final-informatica/imagenes/banner.png" 
+         class="w-100" 
+         style="height:400px; object-fit:cover;" 
+         alt="Guarniciones deliciosas">
+
+    <!-- Texto encima -->
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1 class="fw-bold">¿Qué comemos hoy?</h1>
+    
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- Navbar centrada estilo hamburguesa -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+      <ul class="navbar-nav">
+
+        <!-- Platos -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="platos/index.html">Platos</a>
+          <a class="nav-link dropdown-toggle" href="#" id="platosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="platosDropdown">
+            <li><a class="dropdown-item" href="platos/carnes.html">Carnes</a></li>
+            <li><a class="dropdown-item" href="platos/pastas.html">Pastas</a></li>
+            <li><a class="dropdown-item" href="platos/vegetariano.html">Vegetarianos</a></li>
+          </ul>
+        </li>
+
+        <!-- Guarniciones -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="guarniciones/index.html">Guarniciones</a>
+          <a class="nav-link dropdown-toggle" href="#" id="guarnicionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="guarnicionesDropdown">
+            <li><a class="dropdown-item" href="guarniciones/papas.html">Papas</a></li>
+            <li><a class="dropdown-item" href="guarniciones/verduras.html">Verduras</a></li>
+            <li><a class="dropdown-item" href="guarniciones/arroces.html">Fáciles</a></li>
+          </ul>
+        </li>
+
+        <!-- Postres -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="postres/index.html">Postres</a>
+          <a class="nav-link dropdown-toggle" href="#" id="postresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="postresDropdown">
+            <li><a class="dropdown-item" href="postres/tortas.html">Faciles</a></li>
+            <li><a class="dropdown-item" href="postres/galletas.html">Elavorado</a></li>
+            <li><a class="dropdown-item" href="postres/sin-horno.html">Sin horno</a></li>
+          </ul>
+        </li>
+        <!-- Meriendas -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="meriendas/index.html">Meriendas</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="meriendas/rapidas.html">Rápidas</a></li>
+            <li><a class="dropdown-item" href="meriendas/dulces.html">Dulces</a></li>
+            <li><a class="dropdown-item" href="meriendas/saladas.html">Saladas</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="container my-5 bg-white rounded shadow-sm p-0,5"> 
+  <div class="text-center">   
+    <main class="container my-5">
+      <div class="row">
+        <div class="text-white rounded shadow p-2 d-inline-block" style="background-color: #66d163;">
+          <h2 class="mb-2"> Bienvenid@ a tu lugar de cocina</h2>
+        </div>
+      </div>
+      <p class="lead text-dark">
+        Este es un espacio pensado para disfrutar de la comida sin complicaciones, donde cada plato nace de lo cotidiano y 
+        se transforma en algo especial. Acá vas a encontrar recetas para todos los momentos: platos principales, guarniciones que acompañan, postres que 
+        reconfortan, opciones saludables y meriendas ideales para compartir o disfrutar a solas. Cocinar no es solo seguir pasos, es crear, probar, equivocarse 
+        y volver a intentar. Esta página invita a eso: a animarse, a experimentar y a disfrutar del proceso tanto como del resultado final. Pasá, explorá y sentite como en casa.
+      </p> 
+    </main>
+  </div> 
+</section>
+
+
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Elegidos del dia</h2>
+  
+    
+    <div id="recetasCarousel" class="carousel slide w-75 mx-auto mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <!-- Imagen 1 -->
+        <div class="carousel-item active">
+          <a href="/platos/vegetariano.html">
+            <img src="imagenes/imagen-pizza-galeria.jpg" class="d-block w-100" alt="Pizza casera">
+          </a>
+        </div>
+        
+        <!-- Imagen 2 -->
+        <div class="carousel-item">
+          <a href="receta-ensalada.html">
+            <img src="imagenes/bruschettas-galeria.png" class="d-block w-100" alt="Bruschettas">
+          </a>
+        </div>
+        
+        <!-- Imagen 3 -->
+        <div class="carousel-item">
+          <a href="receta-pasta.html">
+            <img src="imagenes/muffins-galeria.png" class="d-block w-100" alt="Muffins de arandanos">
+          </a>
+        </div>
+      </div>
+      
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#recetasCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#recetasCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Secciones -->
+  <div class="container my-5">
+    <div class="row">
+      <section id="seccion1" class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Queres conocer los secretos del leudado?</h2>
+            <p class="card-text">Descubre los secretos para que tus masas y todas tus recetas con leudado queden suaves, esponjosas y perfectas.</p>
+            <a href="#" class="btn btn-outline-success">Leer más</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion2" class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Como apliar tu paladar a sabores nuevos.</h2>
+            <p class="card-text">Salir de los sabores de siempre no es fácil, por eso te compartimos tips simples y recetas pensadas para ayudarte a incorporar ingredientes nuevos de forma gradual, más saludable y sin perder sabor.</p>
+            <a href="#" class="btn btn-outline-success">Leer más</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion3" class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Necesitas esa receta dulce que te salve de un apuro?</h2>
+            <p class="card-text">Descubre esas recetas que te salvan de un apuro y que con pocos ingredientes, te haga quedar bien a la hora del te</p>
+            <a href="#" class="btn btn-outline-success">Leer más</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2026 Sitio Web Genérico</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
