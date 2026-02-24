@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postres faciles</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+<!-- Banner con imagen -->
+ <body>
+ <header>
+<div class="container-fluid p-0">
+  <div class="position-relative">
+    <!-- Imagen de fondo -->
+    <img src="../imagenes/banner-reposteria.png" 
+         class="w-100" 
+         style="height:400px; object-fit:cover;" 
+         alt="Postres deliciosos">
+
+    <!-- Texto encima -->
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1 class="fw-bold">Postres deliciosos con dulzura</h1>
+      <p class="lead">Ideales para cuando querés algo dulce sin perder tiempo.</p>
+    </div>
+  </div>
+</div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="../index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+      <ul class="navbar-nav">
+
+        <!-- Platos -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../platos/index.html">Platos</a>
+          <a class="nav-link dropdown-toggle" href="#" id="platosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="platosDropdown">
+            <li><a class="dropdown-item" href="../platos/carnes.html">Carnes</a></li>
+            <li><a class="dropdown-item" href="../platos/pastas.html">Pastas</a></li>
+            <li><a class="dropdown-item" href="../platos/vegetariano.html">Vegetarianos</a></li>
+          </ul>
+        </li>
+
+        <!-- Guarniciones -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../guarniciones/index.html">Guarniciones</a>
+          <a class="nav-link dropdown-toggle" href="#" id="guarnicionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="guarnicionesDropdown">
+            <li><a class="dropdown-item" href="../guarniciones/frito.html">Frito</a></li>
+            <li><a class="dropdown-item" href="../guarniciones/verduras.html">Verduras</a></li>
+            <li><a class="dropdown-item" href="../guarniciones/faciles.html">Fáciles</a></li>
+          </ul>
+        </li>
+
+        <!-- Postres -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../postres/index.html">Postres</a>
+          <a class="nav-link dropdown-toggle" href="#" id="postresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="postresDropdown">
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/postres/tortas.html">Fáciles</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/postres/galletas.html">Elaborados</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/postres/sin-horno.html">Sin horno</a></li>
+          </ul>
+        </li>
+        <!-- Meriendas -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="/Final-Lara/Final-informatica/meriendas/index.html">Meriendas</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/meriendas/rapidas.html">Rápidas</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/meriendas/dulces.html">Dulces</a></li>
+            <li><a class="dropdown-item" href="/Final-Lara/Final-informatica/meriendas/saladas.html">Saladas</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <section class="container my-5">
+    <div class="bg-light rounded shadow-sm p-4">
+      <h2 class="fw-bold mb-3">Dulces sin Complicaciones</h2>
+      <p class="lead text-dark fs-3">
+       En esta sección vas a encontrar postres simples, rápidos y deliciosos, ideales para cuando querés algo dulce sin pasar horas en la cocina. 
+       Son recetas pensadas para que cualquiera pueda prepararlas, con ingredientes accesibles y pasos sencillos, pero sin perder sabor ni presentación.
+      </p>
+
+  </div>
+  </section>
+
+
+<main>
+<!-- Contenedor principal -->
+</section>
+<!--Primera receta-->      
+ <section class="container my-5">
+  <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+    <div class="col-md-8">
+      <h2>Helado de frambuesa casero – fresco y cremoso</h2>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <!-- Nuevo cuarto item: explicación -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#panelsStayOpen-collapseIntro" aria-expanded="false" aria-controls="panelsStayOpen-collapseIntro">
+              ¿De qué se trata esta receta?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseIntro" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Este helado de frambuesa casero es refrescante, cremoso y lleno de fruta natural. Ideal para el verano o para disfrutar en cualquier época del año, es una opción 
+                ligera y deliciosa para toda la familia, con poco azúcar añadido y un sabor que invita a repetir. Gracias a un pequeño secreto en su elaboración, logra una textura 
+                suave sin cristales de hielo, ¡perfecto para disfrutar en casa!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+              Ingredientes
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Ingredientes (para 6 personas)
+            <ul> 
+              <li>Frambuesas – 450 g</li> 
+              <li>Plátano – 2 unidades</li> 
+              <li>Nata montada – 65 ml</li> 
+              <li>Miel – 30 ml</li> 
+            </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Modo de preparación
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Primero, lava las frambuesas y tritúralas hasta obtener un puré homogéneo. Luego añade el plátano troceado, la miel y la nata montada, 
+                y bate todo hasta que la mezcla quede cremosa y uniforme. Finalmente, pasa la crema a un envase con tapa, como una tarrina de helado, y guarda en el congelador hasta que esté firme y lista para disfrutar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imagen -->
+    <div class="col-md-4 text-center">
+      <img src="../imagenes/helado.jpg" class="img-fluid rounded shadow-sm" alt="helado de frambuesa">
+    </div>
+  </div>
+</section>
+
+
+<!--segunda receta-->
+<section class="container my-5">
+  <div class="row bg-light rounded shadow-sm p-4 align-items-center"> 
+    <!-- Columna izquierda: título + acordeón -->
+    <div class="col-md-8">
+      <h2>Mousse de chocolate vegana</h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#flushMousseOne" aria-expanded="false" aria-controls="flushMousseOne">
+              ¿De qué se trata esta receta?
+            </button>
+          </h2>
+          <div id="flushMousseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Esta mousse de chocolate vegana esponjosa es un postre delicioso y sorprendente que no requiere huevos ni productos animales. Su textura ligera y aireada se logra gracias a la aquafaba, 
+                el líquido de cocer legumbres, que permite disfrutar de una mousse auténtica y cremosa. Ideal para veganos, alérgicos o simplemente para quienes quieren probar algo diferente y sorprendentemente sencillo de preparar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#flushMousseTwo" aria-expanded="false" aria-controls="flushMousseTwo">
+              Ingredientes
+            </button>
+          </h2>
+          <div id="flushMousseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushMousse">
+            <div class="accordion-body">
+          Rinde para 4 porciones
+          <ul> 
+            <li>Chocolate negro de buena calidad – 115 g</li> 
+            <li>Aquafaba (líquido de conserva de legumbres) – 165 g</li> 
+            <li>Azúcar (opcional) – 25 g</li> <li>Sal (opcional) – 1 g</li> 
+            <li>Esencia de vainilla (opcional) – 2 ml</li> 
+            <li>Licor de café (opcional) – 2 ml</li> 
+          </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#flushMousseThree" aria-expanded="false" aria-controls="flushMousseThree">
+              Preparacion
+            </button>
+          </h2>
+          <div id="flushMousseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushMousse">
+            <div class="accordion-body">
+          <p>Primero, abrí el bote de garbanzos o alubias y colocá el líquido (aquafaba) en un recipiente limpio. Mientras tanto, derretí el chocolate a baño maría hasta que quede completamente liso y brillante.</p>
+
+            <p>Luego, batí la aquafaba con batidora eléctrica hasta que forme picos firmes; si querés un toque más dulce, podés agregar azúcar durante el batido. Una vez lista, incorporá una pequeña parte de la aquafaba 
+              al chocolate para igualar texturas y después agregá el resto con movimientos suaves y envolventes para que no pierda aire. Si te gusta, podés sumar una pizca de sal, esencia de vainilla o un chorrito de licor de café.</p>
+            <p>Por último, repartí la preparación en copas o vasos individuales y llevá a la heladera durante al menos dos horas antes de servir, hasta que tome una textura firme y cremosa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha: imagen -->
+    <div class="col-md-4 text-center">
+      <img src="../imagenes/mousse.jpg" class="img-fluid rounded shadow-sm" alt="Mousse de chocolate">
+    </div>
+  </div>
+</section>
+
+<!-- Tercera receta--> 
+<section class="container my-5">
+  <div class="row bg-light rounded shadow-sm p-4 align-items-center"> 
+    <!-- Columna izquierda: título + acordeón -->
+    <div class="col-md-8">
+      <h2>Vasitos cremosos de chocolate Kinder</h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿De que se trata la receta?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Si buscás un postre rápido, sencillo y súper vistoso, estos vasitos de chocolate Kinder son la opción perfecta. No necesitan horno, 
+                se preparan en apenas 10 minutos y combinan una base crujiente de galleta con una crema suave y aterciopelada de puro chocolate que se deshace en la boca. 
+                Ideales para sorprender en una reunión, una merienda especial o para darte un gusto sin complicarte en la cocina.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Ingredientes
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Rinde: 8 porciones
+<ul>
+  <li>150 g de galletas tipo Digestive</li>
+  <li>75 g de mantequilla derretida</li>
+  <li>200 g de queso crema</li>
+  <li>45 g de azúcar</li>
+  <li>150 ml de nata líquida</li>
+  <li>125 g de chocolate Kinder</li>
+  <li>4 barritas de Kinder Bueno</li>
+  <li>Cacao en polvo (para decorar)</li>
+</ul>
+             
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Preparacion
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+          <p>Triturá las galletas y mezclalas con la mantequilla derretida hasta formar una base húmeda. Colocá esta mezcla en el fondo de los vasitos y presioná bien con una cuchara para compactarla.</p>
+            <p>Aparte, derretí el chocolate junto con la nata hasta que quede una mezcla lisa. Incorporá el azúcar y el queso crema, mezclando hasta lograr una textura cremosa y homogénea. Si querés
+               intensificar el sabor, podés añadir una cucharada de cacao en polvo.</p>
+               <p>Repartí la crema sobre la base de galleta y llevá los vasitos a la heladera durante al menos 6 horas para que tomen consistencia. Antes de servir, decorá con cacao en polvo y trocitos de Kinder Bueno.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div> <!-- cierre del acordeón -->
+    </div> <!-- cierre col-md-8 -->
+
+    <!-- Columna derecha: imagen -->
+    <div class="col-md-4 text-center">
+      <img src="../imagenes/postrekinder.jpg" class="img-fluid rounded shadow-sm" alt="Postre Kinder">
+    </div>
+  </div> <!-- cierre row -->
+</section>
+<section class="container my-5">
+  <div class="row bg-light rounded shadow-sm p-4 align-items-center"> 
+    <!-- Columna izquierda: título + acordeón -->
+    <div class="col-md-8">
+      <h2>Postre de frutos rojos</h2>
+      <div class="accordion accordion-flush" id="accordionCanapes">
+        
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#Canapes-collapseOne" 
+              aria-expanded="false" aria-controls="Canapes-collapseOne">
+              ¿De qué se trata la receta?
+            </button>
+          </h2>
+          <div id="Canapes-collapseOne" class="accordion-collapse collapse" 
+               data-bs-parent="#accordionCanapes">
+            <div class="accordion-body">
+              <p>Este postre en capas es fresco, delicado y súper vistoso, ideal para celebraciones especiales o para cerrar una comida 
+                con algo liviano pero irresistible. Combina una base crocante de galletas con una crema suave y aireada de queso, coronada con 
+                frutos rojos frescos que aportan color y un contraste ligeramente ácido. Además, se prepara en solo 15 minutos y no necesita horno.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#Canapes-collapseTwo" 
+              aria-expanded="false" aria-controls="Canapes-collapseTwo">
+              Ingredientes
+            </button>
+          </h2>
+          <div id="Canapes-collapseTwo" class="accordion-collapse collapse" 
+               data-bs-parent="#accordionCanapes">
+            <div class="accordion-body">
+              Rinde: 4 porciones
+<ul>
+  <li>200 g de galletas de vainilla o chocolate</li>
+  <li>50 g de manteca (mantequilla) derretida</li>
+  <li>400 g de queso crema</li>
+  <li>200 ml de crema de leche (nata para montar)</li>
+  <li>100 g de azúcar glas (azúcar impalpable)</li>
+  <li>1 cucharadita de esencia de vainilla</li>
+  <li>200 g de frutos rojos (fresas, arándanos, frambuesas)</li>
+  <li>Hojas de menta para decorar</li>
+</ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#Canapes-collapseThree" 
+              aria-expanded="false" aria-controls="Canapes-collapseThree">
+              Modo de preparación
+            </button>
+          </h2>
+          <div id="Canapes-collapseThree" class="accordion-collapse collapse" 
+               data-bs-parent="#accordionCanapes">
+            <div class="accordion-body">
+              <p>Triturá las galletas hasta obtener una textura tipo arena y mezclalas con la manteca derretida. Repartí la mezcla en el fondo de cuatro copas o vasos, 
+                presionando suavemente para compactar. Llevá a la heladera mientras preparás la crema.</p>
+
+              <p>Batí el queso crema junto con el azúcar glas y la esencia de vainilla hasta lograr una mezcla suave y sin grumos. En otro recipiente, montá la crema de 
+                leche hasta que forme picos firmes e incorporala a la preparación anterior con movimientos envolventes para mantener la textura aireada.</p>
+
+              <p>Distribuí la crema sobre la base de galletas y refrigerá hasta el momento de servir. Antes de presentar, decorá con abundantes frutos rojos frescos, un 
+                poco más de crema si lo deseás y hojas de menta. Si usás copas más grandes, podés repetir las capas para un efecto más impactante.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Columna derecha: imagen -->
+    <div class="col-md-4 text-center">
+      <img src="../imagenes/postrefrutillas.jpg" class="img-fluid rounded shadow-sm" alt="Postre frutos rojos">
+    </div>
+  </div>
+</section>
+
+
+</main>
+<footer class="bg-dark text-white text-center py-3">
+  <p>Si tienes dudas de alguna receta te podemos ayudar aqui</p>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
