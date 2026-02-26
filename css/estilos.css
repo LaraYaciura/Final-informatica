@@ -46,3 +46,12 @@ h2{
 .merienda{
   color:#cd5a5a;
 }
+.shuffle-animation {
+  animation: shuffle 0.6s ease-in-out;
+}
+
+@keyframes shuffle {
+  0% { transform: rotateY(0deg) scale(1); }
+  50% { transform: rotateY(90deg) scale(0.9); }
+  100% { transform: rotateY(0deg) scale(1); }
+}
