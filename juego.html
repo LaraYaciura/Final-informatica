@@ -17,7 +17,7 @@
 <header>
   <div class="container-fluid p-0">
     <div class="position-relative">
-      <img src="imagenes/banner-reposteria.png"
+      <img src="merienda/imagenes/banner-reposteria.png"
            class="w-100"
            style="height:350px; object-fit:cover;"
            alt="Memotest de postres">
@@ -29,43 +29,83 @@
     </div>
   </div>
 </header>
+<!-- Navbar centrada estilo hamburguesa -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-  <div class="container justify-content-center"> 
-    <a class="navbar-brand" href="../index.html">Inicio</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"> 
-      <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal"> <ul class="navbar-nav"> 
+    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+      <ul class="navbar-nav">
 
-        <!-- Platos --> 
-  <li class="nav-item dropdown d-flex align-items-center"> <a class="nav-link" href="../platos/index.html">Platos</a> 
-  <a class="nav-link dropdown-toggle" href="#" id="platosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a> 
-  <ul class="dropdown-menu text-center" aria-labelledby="platosDropdown"> <li><a class="dropdown-item" href="../platos/carnes.html">Carnes</a></li> 
-  <li><a class="dropdown-item" href="../platos/pastas.html">Pastas</a></li> <li><a class="dropdown-item" href="../platos/vegetariano.html">Vegetarianos</a></li> 
-</ul> </li> <!-- Guarniciones --> <li class="nav-item dropdown d-flex align-items-center"> <a class="nav-link" href="../guarniciones/index.html">Guarniciones</a> 
-  <a class="nav-link dropdown-toggle" href="#" id="guarnicionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a> 
-  <ul class="dropdown-menu text-center" aria-labelledby="guarnicionesDropdown"> 
-    <li><a class="dropdown-item" href="../guarniciones/frito.html">Frito</a></li> 
-    <li><a class="dropdown-item" href="../guarniciones/verduras.html">Verduras</a></li> 
-    <li><a class="dropdown-item" href="../guarniciones/faciles.html">Fáciles</a></li> 
-  </ul> 
-</li> <!-- Postres --> 
-<li class="nav-item dropdown d-flex align-items-center"> <a class="nav-link" href="../postres/index.html">Postres</a> 
-  <a class="nav-link dropdown-toggle" href="#" id="postresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a> 
-  <ul class="dropdown-menu text-center" aria-labelledby="postresDropdown"> <li><a class="dropdown-item" href="../postres/rapidos.html">Fáciles</a></li> 
-  <li><a class="dropdown-item" href="../postres/elaborados.html">Elaborados</a></li> <li><a class="dropdown-item" href="../postres/sinhorno.html">Sin horno</a></li> 
-</ul> </li> 
-<!-- Meriendas --> 
- <li class="nav-item dropdown d-flex align-items-center"> <a class="nav-link" href="../merienda/index.html">Meriendas</a> 
-  <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a> 
-  <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown"> <li><a class="dropdown-item" href="../merienda/rapidas.html">Rápidas</a></li> 
-    <li><a class="dropdown-item" href="../merienda/dulces.html">Dulces</a></li> <li><a class="dropdown-item" href="../merienda/saladas.html">Saladas</a></li> 
-  </ul> 
-</li> 
-</ul> 
-</div> 
-</div> 
+        <!-- Platos -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="platos/index.html">Platos</a>
+          <a class="nav-link dropdown-toggle" href="#" id="platosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="platosDropdown">
+            <li><a class="dropdown-item" href="platos/carnes.html">Carnes</a></li>
+            <li><a class="dropdown-item" href="platos/pastas.html">Pastas</a></li>
+            <li><a class="dropdown-item" href="platos/vegetariano.html">Vegetarianos</a></li>
+          </ul>
+        </li>
+
+        <!-- Guarniciones -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="guarniciones/index.html">Guarniciones</a>
+          <a class="nav-link dropdown-toggle" href="#" id="guarnicionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="guarnicionesDropdown">
+            <li><a class="dropdown-item" href="guarniciones/verduras.html">Verduras</a></li>
+            <li><a class="dropdown-item" href="guarniciones/frito.html">Frito</a></li>
+            <li><a class="dropdown-item" href="guarniciones/faciles.html">Fáciles</a></li>
+          </ul>
+        </li>
+
+        <!-- Postres -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="postres/index.html">Postres</a>
+          <a class="nav-link dropdown-toggle" href="#" id="postresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="postresDropdown">
+            <li><a class="dropdown-item" href="postres/rapidos.html">Faciles</a></li>
+            <li><a class="dropdown-item" href="postres/elaborados.html">Elaborado</a></li>
+            <li><a class="dropdown-item" href="postres/sinhorno.html">Sin horno</a></li>
+          </ul>
+        </li>
+        <!-- Meriendas -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="merienda/index.html">Meriendas</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="merienda/rapidas.html">Rápidas</a></li>
+            <li><a class="dropdown-item" href="merienda/dulces.html">Dulces</a></li>
+            <li><a class="dropdown-item" href="merienda/saladas.html">Saladas</a></li>
+          </ul>
+        </li>
+              <!-- Nacionales -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="nacionales/index.html">Nacionales</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="nacionales/platos.html">Platos</a></li>
+            <li><a class="dropdown-item" href="nacionales/postres.html">Postres</a></li>
+      </ul>
+        </li>
+                      <!-- Gluten free -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="gluten/index.html">Sin TACC</a>
+          <a class="nav-link dropdown-toggle" href="#" id="glutenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="glutenDropdown">
+            <li><a class="dropdown-item" href="gluten/platos.html">Platos</a></li>
+            <li><a class="dropdown-item" href="gluten/postres.html">Postres</a></li>
+          </ul>
+        </li>
+
+          </ul>
+        </li>
+    </div>
+  </div>
 </nav>
-
 <!-- ================= INTRO ================= -->
 
 <section class="container my-5">
@@ -135,7 +175,7 @@
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-dark text-white text-center py-3">
-  © 2026 - Dulces recetas y juegos
+  <p>Comenta que te parecio esta interfaz!       <li class="nav-item"><a class="nav-link text-white" href="formulario.html">Encuesta</a></li> </p>
 </footer>
 
 <!-- ================= SCRIPT ================= -->
@@ -151,12 +191,12 @@ const startBtn = document.getElementById("startBtn");
 const endModal = new bootstrap.Modal(document.getElementById("endModal"));
 
 let cardsArray = [
-  "imagenes/bombonsuizo.jpg",
-  "imagenes/crepes.jpg",
-  "imagenes/eclairs.jpg",
-  "imagenes/limon.jpg",
-  "imagenes/helado.jpg",
-  "imagenes/postrekinder.jpg"
+  "postres/imagenes/bombonsuizo.jpg",
+  "merienda/imagenes/crepes.jpg",
+  "merienda/imagenes/eclairs.jpg",
+  "postres/imagenes/limon.jpg",
+  "postres/imagenes/helado.jpg",
+  "postres/imagenes/postrekinder.jpg"
 ];
 
 let gameCards = [];

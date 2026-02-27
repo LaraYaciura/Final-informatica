@@ -8,11 +8,24 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>  
-  <!-- Encabezado -->
-  <header class="text-white text-center py-4" style="background-color: #66d163;">
-    <h1>Platos de pastas para deleitarse</h1>
+  <header>
+<div class="container-fluid p-0">
+  <div class="position-relative">
+    <!-- Imagen de fondo -->
+    <img src="../platos/imagenes/banner.png" 
+         class="w-100" 
+         style="height:400px; object-fit:cover;" 
+         alt="Guarniciones deliciosas">
+
+    <!-- Texto encima -->
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1 class="fw-bold">Platos de pastas para deleitarse</h1>
     <p>Selección de Pastas caseras y unicas para expandir tu paladar.</p>
-  </header>
+    </div>
+  </div>
+</div>
+</header>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container justify-content-center">
@@ -66,9 +79,27 @@
             <li><a class="dropdown-item" href="../merienda/saladas.html">Saladas</a></li>
           </ul>
         </li>
-
+              <!-- Nacionales -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../nacionales/index.html">Nacionales</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="../nacionales/platos.html">Platos</a></li>
+            <li><a class="dropdown-item" href="../nacionales/postres.html">Postres</a></li>
+      </ul> </li>
+      
+                          <!-- Gluten free -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../gluten/index.html">Sin TACC</a>
+          <a class="nav-link dropdown-toggle" href="#" id="glutenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="glutenDropdown">
+            <li><a class="dropdown-item" href="../gluten/platos.html">Platos</a></li>
+            <li><a class="dropdown-item" href="../gluten/postres.html">Postres</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
+
   </div>
 </nav>
 
@@ -476,9 +507,9 @@ salsas típicas como tomate, bolognesa, crema o pesto. Se destacan por su simple
 
 
 </main>
-<footer>
-  <p>Si tienes dudas de alguna receta te podemos ayudar aqui</p>
-</footer>
+  <footer class="bg-dark text-white text-center py-3">
+   <p class="nav-item">Si tuviste complicaciones con alguna receta o simplemente nos queres dejar tú opinion del sitio apreta aquí! <a class="nav-link text-white" href="formulario.html">Encuesta</a> </p> 
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

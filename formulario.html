@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ENCABEZADO IGUAL AL INDEX -->
+<header>
+  <div class="container-fluid p-0">
+    <div class="position-relative">
+      <img src="../Final-informatica/imagenes/banner.png" 
+           class="w-100" 
+           style="height:400px; object-fit:cover;" 
+           alt="Contacto">
+
+      <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="fw-bold">Queremos escucharte</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- Navbar centrada estilo hamburguesa -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+      <ul class="navbar-nav">
+
+        <!-- Platos -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="platos/index.html">Platos</a>
+          <a class="nav-link dropdown-toggle" href="#" id="platosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="platosDropdown">
+            <li><a class="dropdown-item" href="platos/carnes.html">Carnes</a></li>
+            <li><a class="dropdown-item" href="platos/pastas.html">Pastas</a></li>
+            <li><a class="dropdown-item" href="platos/vegetariano.html">Vegetarianos</a></li>
+          </ul>
+        </li>
+
+        <!-- Guarniciones -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="guarniciones/index.html">Guarniciones</a>
+          <a class="nav-link dropdown-toggle" href="#" id="guarnicionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="guarnicionesDropdown">
+            <li><a class="dropdown-item" href="guarniciones/verduras.html">Verduras</a></li>
+            <li><a class="dropdown-item" href="guarniciones/frito.html">Frito</a></li>
+            <li><a class="dropdown-item" href="guarniciones/faciles.html">Fáciles</a></li>
+          </ul>
+        </li>
+
+        <!-- Postres -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="postres/index.html">Postres</a>
+          <a class="nav-link dropdown-toggle" href="#" id="postresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="postresDropdown">
+            <li><a class="dropdown-item" href="postres/rapidos.html">Faciles</a></li>
+            <li><a class="dropdown-item" href="postres/elaborados.html">Elaborado</a></li>
+            <li><a class="dropdown-item" href="postres/sinhorno.html">Sin horno</a></li>
+          </ul>
+        </li>
+        <!-- Meriendas -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="merienda/index.html">Meriendas</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="merienda/rapidas.html">Rápidas</a></li>
+            <li><a class="dropdown-item" href="merienda/dulces.html">Dulces</a></li>
+            <li><a class="dropdown-item" href="merienda/saladas.html">Saladas</a></li>
+          </ul>
+        </li>
+              <!-- Nacionales -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="nacionales/index.html">Nacionales</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="nacionales/platos.html">Platos</a></li>
+            <li><a class="dropdown-item" href="nacionales/postres.html">Postres</a></li>
+      </ul>
+        </li>
+                      <!-- Gluten free -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="gluten/index.html">Sin TACC</a>
+          <a class="nav-link dropdown-toggle" href="#" id="glutenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="glutenDropdown">
+            <li><a class="dropdown-item" href="gluten/platos.html">Platos</a></li>
+            <li><a class="dropdown-item" href="gluten/postres.html">Postres</a></li>
+          </ul>
+        </li>
+
+          </ul>
+        </li>
+    </div>
+  </div>
+</nav>
+
+<!-- FORMULARIO -->
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-success text-white text-center">
+          <h2 class="h4 mb-0">Formulario de Contacto</h2>
+        </div>
+
+        <div class="card-body p-4">
+
+          <p class="text-secondary text-center mb-4">
+            Completá el formulario para enviarnos tu consulta.
+          </p>
+
+          <form id="formularioContacto" novalidate>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre">
+              <div class="text-danger small" id="errorNombre"></div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Correo electrónico</label>
+              <input type="email" class="form-control" id="email">
+              <div class="text-danger small" id="errorEmail"></div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Asunto</label>
+              <input type="text" class="form-control" id="asunto">
+              <div class="text-danger small" id="errorAsunto"></div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Mensaje</label>
+              <textarea class="form-control" rows="4" id="mensaje"></textarea>
+              <div class="text-danger small" id="errorMensaje"></div>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">
+              Enviar Consulta
+            </button>
+
+          </form>
+
+          <div id="mensajeExito" class="alert alert-success mt-4 d-none">
+            ✅ ¡Tu mensaje fue enviado correctamente!
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER IGUAL -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="nav-item">
+    Si queres saber quien esta atras del proyecto apreta aquí <a class="nav-link text-white" href="formulario.html">Contacto</a> </p> 
+  </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- VALIDACIÓN JS -->
+<script>
+document.getElementById("formularioContacto").addEventListener("submit", function(event){
+
+  event.preventDefault();
+
+  // limpiar errores
+  document.getElementById("errorNombre").innerHTML = "";
+  document.getElementById("errorEmail").innerHTML = "";
+  document.getElementById("errorAsunto").innerHTML = "";
+  document.getElementById("errorMensaje").innerHTML = "";
+
+  let nombre = document.getElementById("nombre").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let asunto = document.getElementById("asunto").value.trim();
+  let mensaje = document.getElementById("mensaje").value.trim();
+
+  let valido = true;
+
+  if(nombre === ""){
+    document.getElementById("errorNombre").innerHTML = "El nombre es obligatorio";
+    valido = false;
+  }
+
+  if(email === ""){
+    document.getElementById("errorEmail").innerHTML = "El email es obligatorio";
+    valido = false;
+  } else if(!email.includes("@") || !email.includes(".")){
+    document.getElementById("errorEmail").innerHTML = "Email inválido";
+    valido = false;
+  }
+
+  if(asunto === ""){
+    document.getElementById("errorAsunto").innerHTML = "El asunto es obligatorio";
+    valido = false;
+  }
+
+  if(mensaje === ""){
+    document.getElementById("errorMensaje").innerHTML = "El mensaje es obligatorio";
+    valido = false;
+  }
+
+  if(valido){
+    let cuerpo = "Nombre: " + nombre + "%0D%0A" +
+                 "Email: " + email + "%0D%0A%0D%0A" +
+                 "Mensaje:%0D%0A" + mensaje;
+
+    window.location.href = "mailto:TUEMAIL@gmail.com?subject=" + asunto + "&body=" + cuerpo;
+
+    document.getElementById("mensajeExito").classList.remove("d-none");
+  }
+
+});
+</script>
+
+</body>
+</html>

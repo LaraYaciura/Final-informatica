@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platos libres de gluten</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>  
+  <!-- Encabezado -->
+    <header>
+<div class="container-fluid p-0">
+  <div class="position-relative">
+    <!-- Imagen de fondo -->
+    <img src="../gluten/imagenes/banner.jpg" 
+         class="w-100" 
+         style="height:400px; object-fit:cover;" 
+         alt="Postres deliciosos">
+
+    <!-- Texto encima -->
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1 class="fw-bold">Platos sin contaminacion de trigo</h1>
+   <p>Selecion de recetas clasicas que no fallan</p>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="../index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+      <ul class="navbar-nav">
+
+        <!-- Platos -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../platos/index.html">Platos</a>
+          <a class="nav-link dropdown-toggle" href="#" id="platosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="platosDropdown">
+            <li><a class="dropdown-item" href="../platos/carnes.html">Carnes</a></li>
+            <li><a class="dropdown-item" href="../platos/pastas.html">Pastas</a></li>
+            <li><a class="dropdown-item" href="../platos/vegetariano.html">Vegetarianos</a></li>
+          </ul>
+        </li>
+
+        <!-- Guarniciones -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../guarniciones/index.html">Guarniciones</a>
+          <a class="nav-link dropdown-toggle" href="#" id="guarnicionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="guarnicionesDropdown">
+            <li><a class="dropdown-item" href="../guarniciones/frito.html">Frito</a></li>
+            <li><a class="dropdown-item" href="../guarniciones/verduras.html">Verduras</a></li>
+            <li><a class="dropdown-item" href="../guarniciones/faciles.html">Fáciles</a></li>
+          </ul>
+        </li>
+
+        <!-- Postres -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../postres/index.html">Postres</a>
+          <a class="nav-link dropdown-toggle" href="#" id="postresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="postresDropdown">
+            <li><a class="dropdown-item" href="../postres/rapidos.html">Fáciles</a></li>
+            <li><a class="dropdown-item" href="../postres/elaborados.html">Elaborados</a></li>
+            <li><a class="dropdown-item" href="../postres/sinhorno.html">Sin horno</a></li>
+          </ul>
+        </li>
+        <!-- Meriendas -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../merienda/index.html">Meriendas</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="../merienda/rapidas.html">Rápidas</a></li>
+            <li><a class="dropdown-item" href="../merienda/dulces.html">Dulces</a></li>
+            <li><a class="dropdown-item" href="../merienda/saladas.html">Saladas</a></li>
+          </ul>
+        </li>
+              <!-- Nacionales -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../nacionales/index.html">Nacionales</a>
+          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+            <li><a class="dropdown-item" href="../nacionales/platos.html">Platos</a></li>
+            <li><a class="dropdown-item" href="../nacionales/postres.html">Postres</a></li>
+          </ul>
+        </li>
+
+                          <!-- Gluten free -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="../gluten/index.html">Sin TACC</a>
+          <a class="nav-link dropdown-toggle" href="#" id="glutenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="glutenDropdown">
+            <li><a class="dropdown-item" href="../gluten/platos.html">Platos</a></li>
+            <li><a class="dropdown-item" href="../gluten/postres.html">Postres</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <section class="container my-5">
+    <div class="bg-light rounded shadow-sm p-4">
+      <h2 class="text-success fw-bold mb-3">Recetas clasicas</h2>
+      <p class="lead text-dark fs-3">
+       En esta sección vas a encontrar recetas saladas sin gluten pensadas para disfrutar sin preocupaciones. Desde opciones clásicas hasta preparaciones 
+       más innovadoras, cada plato está diseñado para mantener el sabor, la textura y la calidad que todos buscamos en la cocina.
+      </p>
+<p>Porque comer sin gluten no significa resignar variedad ni placer, acá reunimos propuestas ideales para el almuerzo, la cena o una comida especial, 
+  siempre con ingredientes seguros y combinaciones equilibradas. Cocinar sin TACC puede ser simple, rico y creativo.</p>
+
+  </div>
+
+  </section>
+
+<main>
+<!-- Contenedor principal -->
+<section class="container my-5">
+  <div class="row">
+    
+</section>
+<!--Primera receta-->      
+<section class="container my-5">
+  <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+    <div class="col-md-8">
+      <h2>Pan Sin Gluten Esponjoso</h2>
+
+      <div class="accordion" id="accordionPanGF">
+
+        <!-- Introducción -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panIntro">
+              ¿De qué se trata la receta?
+            </button>
+          </h2>
+          <div id="panIntro" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Esta es una receta de pan sin gluten fácil y rápida que no lleva huevos ni lácteos, 
+              y tampoco requiere amasar. El resultado es un pan con miga tierna, húmeda y aireada, 
+              ideal para sándwich, tostadas o para acompañar cualquier comida. :contentReference[oaicite:1]{index=1}
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panIng">
+              Ingredientes
+            </button>
+          </h2>
+          <div id="panIng" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li>300 g de premezcla sin gluten</li>
+                <li>100 g de trigo sarraceno (opcional)</li>
+                <li>10 g de psyllium</li>
+                <li>10 g de levadura seca</li>
+                <li>4 g de azúcar</li>
+                <li>400 cc de agua tibia</li>
+                <li>50 cc de aceite de girasol</li>
+                <li>Sal a gusto</li>
+              </ul>
+              (Todos los ingredientes deben ser libres de gluten).
+            </div>
+          </div>
+        </div>
+
+        <!-- Preparación -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#panIntegral" aria-expanded="false" aria-controls="panIntegral">
+              Preparación
+            </button>
+          </h2>
+          <div id="panIntegral" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Primero, colocá la levadura seca junto con el azúcar y una pequeña parte del agua tibia en un recipiente. Mezclá suavemente y dejá 
+                reposar unos minutos hasta que se forme una espuma en la superficie, lo que indica que la levadura está activa.</p>
+
+              <p>Mientras tanto, en un bol grande mezclá la premezcla sin gluten, el trigo sarraceno (si decidís usarlo), el psyllium y la sal. 
+                Integrá bien los ingredientes secos para que queden distribuidos de manera uniforme.Luego, agregá a la mezcla seca la levadura 
+                ya activada, el aceite y el resto del agua tibia. Mezclá con cuchara o espátula hasta obtener una masa homogénea y algo pegajosa. No es necesario amasar.</p>
+
+              <p>Volcá la preparación en un molde previamente aceitado y alisá la superficie con una espátula húmeda. Cubrí con un paño y dejá 
+                leudar en un lugar cálido hasta que la masa aumente su volumen.Finalmente, llevá a horno precalentado a temperatura media y cociná 
+                hasta que el pan esté dorado por fuera. Retirá, dejá enfriar completamente antes de cortar y ¡listo para disfrutar!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Imagen -->
+    <div class="col-md-4 text-center">
+      <img src="../gluten/imagenes/pan.jpg" class="img-fluid rounded shadow-sm" alt="Pan sin gluten">
+    </div>
+  </div>
+</section>
+
+<!--segunda receta-->
+<section class="container my-5">
+  <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+    <div class="col-md-8">
+      <h2>Pizza Sin TACC</h2>
+
+      <div class="accordion" id="accordionPizza">
+
+        <!-- Introducción -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pizzaIntro">
+              ¿De qué se trata esta receta?
+            </button>
+          </h2>
+          <div id="pizzaIntro" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Esta pizza sin gluten está pensada para que la masa quede tierna por dentro y ligeramente crocante por fuera. 
+              Se prepara con harinas sin TACC y no requiere ingredientes difíciles de conseguir. Es ideal para celíacos 
+              o para quienes evitan el gluten sin sacrificar sabor.
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pizzaIng">
+              Ingredientes
+            </button>
+          </h2>
+          <div id="pizzaIng" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li>300 g de premezcla sin gluten</li>
+                <li>1 cda de psyllium</li>
+                <li>7 g de levadura seca</li>
+                <li>1 cdita de azúcar</li>
+                <li>350–370 cc de agua tibia</li>
+                <li>2 cdas de aceite de oliva</li>
+                <li>1 cdita de sal</li>
+                <li>Salsa de tomate (para cubrir)</li>
+                <li>Queso mozzarella (o tu preferido)</li>
+                <li>Ingredientes extra al gusto</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preparación -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pizzaPrep">
+              Preparación
+            </button>
+          </h2>
+          <div id="pizzaPrep" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Primariamente, activá la levadura mezclándola con el azúcar y una parte del agua tibia. 
+              Esperá unos minutos hasta que se forme espuma, lo que indica que la levadura está lista.
+
+              En un bol amplio combiná la premezcla sin gluten con el psyllium y la sal. Agregá la levadura activada, 
+              el aceite de oliva y el resto del agua tibia. Mezclá con cuchara o espátula hasta obtener una masa 
+              húmeda y homogénea.
+
+              Aceitá una placa para horno y volcá la masa en ella. Con una espátula húmeda estirá la masa dándole 
+              forma redonda u ovalada, según prefieras. Tapá con un paño y dejá levar en un lugar cálido hasta que 
+              aumente de volumen.
+
+              Cuando la masa haya levado, llevá al horno precalentado por unos minutos para que tome consistencia. 
+              Retirala, untá con salsa de tomate, agregá el queso y los ingredientes que prefieras. Volvé a hornear 
+              hasta que el queso esté fundido y la base dorada.
+
+              Por último, retirála del horno, dejá enfriar unos minutos y cortá en porciones para servir.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img src="../gluten/imagenes/pizza.jfif" class="img-fluid rounded shadow-sm" alt="Pizza sin gluten">
+    </div>
+  </div>
+</section>
+<!-- Tercera receta--> 
+<section class="container my-5">
+  <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+    <div class="col-md-8">
+      <h2>Ñoquis de Queso Sin TACC</h2>
+
+      <div class="accordion" id="accordionNoquis">
+
+        <!-- Introducción -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#noquisIntro">
+              ¿De qué se trata esta receta?
+            </button>
+          </h2>
+          <div id="noquisIntro" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Estos ñoquis de queso sin gluten son tiernos y sabrosos, perfectos para quienes
+              evitan el TACC pero no quieren renunciar a un clásico reconfortante. 
+              Se preparan con quesos y harinas sin gluten hasta lograr una masa suave 
+              que se cocina rápidamente y acompaña bien con tus salsas favoritas.
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#noquisIng">
+              Ingredientes
+            </button>
+          </h2>
+          <div id="noquisIng" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li>200 g de queso fresco rallado</li>
+                <li>1 huevo</li>
+                <li>80 g de premezcla sin gluten</li>
+                <li>30 g de queso parmesano rallado</li>
+                <li>Sal y pimienta a gusto</li>
+                <li>Opcional: nuez moscada</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preparación -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#noquisPrep">
+              Preparación
+            </button>
+          </h2>
+          <div id="noquisPrep" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              En un bol mezclá el queso fresco rallado con el queso parmesano.  
+              Agregá el huevo, una pizca de sal, pimienta y, si usás, nuez moscada.  
+              Incorporá la premezcla sin gluten hasta que se forme una masa suave 
+              y un poco pegajosa.
+
+              En una superficie limpia y espolvoreada con un poco de premezcla, 
+              tomá porciones de masa y formá pequeños cilindros.  
+              Cortá los cilindros en porciones de 1–2 cm formando los ñoquis.
+
+              Llevá a hervir una olla con agua y sal. Cuando el agua esté en ebullición,
+              agregá los ñoquis. Cuando suban a la superficie, cocinalos 1–2 minutos más 
+              hasta que estén tiernos.
+
+              Retiralos con una espumadera, escurrí bien y serví calientes con la salsa
+              que prefieras: tuco, manteca y salvia o una crema ligera.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Imagen -->
+    <div class="col-md-4 text-center">
+      <img src="../gluten/imagenes/noquis.webp" class="img-fluid rounded shadow-sm" alt="Ñoquis sin gluten">
+    </div>
+  </div>
+</section>
+<section class="container my-5">
+  <div class="row bg-light rounded shadow-sm p-4 align-items-center">
+    <div class="col-md-8">
+      <h2>Masa de Empanadas Sin TACC</h2>
+
+      <div class="accordion" id="accordionMasaEmpa">
+
+        <!-- Introducción -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masaEmpaIntro">
+              ¿De qué se trata esta receta?
+            </button>
+          </h2>
+          <div id="masaEmpaIntro" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Esta masa de empanadas sin gluten es tierna, fácil de manipular
+              y perfecta para rellenar con tus guisos favoritos. Está pensada
+              para que puedas trabajarla con tus manos sin que se rompa, y al
+              hornearse queda ligera y dorada. Ideal para cualquier tipo de
+              empanada salada.
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masaEmpaIng">
+              Ingredientes
+            </button>
+          </h2>
+          <div id="masaEmpaIng" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li>500 g de premezcla sin gluten</li>
+                <li>50 g de fécula de maíz</li>
+                <li>1 cdita de sal</li>
+                <li>150 g de manteca fría</li>
+                <li>120–150 ml de agua fría</li>
+                <li>1 huevo (opcional para dar elasticidad)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preparación -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masaEmpaPrep">
+              Preparación
+            </button>
+          </h2>
+          <div id="masaEmpaPrep" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Empezá mezclando en un bol la premezcla sin gluten, la fécula de
+              maíz y la sal. Incorporá la manteca fría cortada en cubitos y con
+              las yemas de los dedos desintegrala hasta que quede una textura
+              arenosa, algo así como migas gruesas.
+
+              Si decidís usar huevo, agregalo ahora y mezclá. Luego, vertí
+              poco a poco el agua fría mientras integrás con una cuchara o
+              espátula hasta formar una masa compacta pero tierna. No debe
+              quedar pegajosa; si está muy seca agregá un chorrito de agua más.
+
+              Pasá la masa a una superficie limpia y espolvoreada con un poco
+              de premezcla. Aplastala con las manos y formá un disco. Tapalo
+              con un paño y dejá descansar 15–20 minutos para que se relaje
+              y sea más fácil de estirar.
+
+              Tomá porciones pequeñas y estiralas con un palote hasta obtener
+              círculos del tamaño deseado para tus empanadas. Ya están listas
+              para rellenar con tu guiso preferido y hornear o freír.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img src="../gluten/imagenes/empanadas.jpg" class="img-fluid rounded shadow-sm" alt="Masa de empanadas sin gluten">
+    </div>
+  </div>
+</section>
+</main>
+  <footer class="bg-dark text-white text-center py-3">
+   <p class="nav-item">Si tuviste complicaciones con alguna receta o simplemente nos queres dejar tú opinion del sitio apreta aquí! <a class="nav-link text-white" href="formulario.html">Encuesta</a> </p> 
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
