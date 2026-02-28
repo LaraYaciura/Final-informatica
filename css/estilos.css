@@ -1,4 +1,4 @@
-h2{
+.postres{
   color:rgb(175, 102, 163)
 }
 
@@ -54,4 +54,56 @@ h2{
   0% { transform: rotateY(0deg) scale(1); }
   50% { transform: rotateY(90deg) scale(0.9); }
   100% { transform: rotateY(0deg) scale(1); }
+}
+/* ===== HEADER ===== */
+.header-img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  .header-img {
+    height: 220px;
+  }
+
+  .header-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===== SECCIÓN INTRO ===== */
+.intro-section {
+  padding: 2rem 1rem;
+}
+
+/* ===== CAROUSEL ===== */
+.carousel-custom {
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .carousel-custom {
+    width: 100%;
+  }
+}
+
+/* ===== CARDS ===== */
+.card-title {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+/* ===== FOOTER LINKS ===== */
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }

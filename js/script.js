@@ -1,22 +1,26 @@
-// --- Capturar elementos del DOM ---
+// =============================================
+// FORMULARIO DE CONTACTO - VALIDACIONES
+// =============================================
+
+// Capturar elementos del DOM
 const formulario = document.querySelector('#formularioContacto');
 const inputNombre = document.querySelector('#nombre');
 const inputEmail = document.querySelector('#email');
 const inputAsunto = document.querySelector('#asunto');
 const inputMensaje = document.querySelector('#mensaje');
 
-// --- Elementos para mostrar errores ---
+// Elementos para mostrar errores
 const errorNombre = document.querySelector('#errorNombre');
 const errorEmail = document.querySelector('#errorEmail');
 const errorAsunto = document.querySelector('#errorAsunto');
 const errorMensaje = document.querySelector('#errorMensaje');
 
-// --- Elementos para feedback y storage ---
+// Elementos para feedback y storage
 const mensajeExito = document.querySelector('#mensajeExito');
 const ultimaConsultaDiv = document.querySelector('#ultimaConsulta');
 const datosUltimaConsulta = document.querySelector('#datosUltimaConsulta');
 
-// --- Función para validar Email ---
+// Función para validar Email
 function esEmailValido(email) {
     if (email === '') return false;
     
@@ -31,17 +35,17 @@ function esEmailValido(email) {
     return true;
 }
 
-// --- Función para quitar clase de error de Bootstrap ---
+// Función para quitar clase de error de Bootstrap
 function quitarError(elemento) {
     elemento.classList.remove('is-invalid');
 }
 
-// --- Función para poner clase de error de Bootstrap ---
-function ponerError(elemento, mensaje) {
+// Función para poner clase de error de Bootstrap
+function ponerError(elemento) {
     elemento.classList.add('is-invalid');
 }
 
-// --- Función para validar el formulario completo ---
+// Función para validar el formulario completo
 function validarFormulario() {
     let esValido = true;
     
@@ -97,14 +101,14 @@ function validarFormulario() {
     return esValido;
 }
 
-// --- Función para guardar en localStorage ---
+// Función para guardar en localStorage
 function guardarConsultaEnStorage(datosConsulta) {
     let datosString = JSON.stringify(datosConsulta);
     localStorage.setItem('ultimaConsulta', datosString);
     console.log('Consulta guardada en localStorage');
 }
 
-// --- Función para mostrar la última consulta ---
+// Función para mostrar la última consulta
 function mostrarUltimaConsulta() {
     let consultaGuardada = localStorage.getItem('ultimaConsulta');
     
@@ -121,7 +125,7 @@ function mostrarUltimaConsulta() {
     }
 }
 
-// --- EVENTO PRINCIPAL: submit del formulario ---
+// EVENTO PRINCIPAL: submit del formulario
 formulario.addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -152,8 +156,146 @@ formulario.addEventListener('submit', function(event) {
     }
 });
 
-// --- Evento load para mostrar datos guardados ---
+// Evento load para mostrar datos guardados
 window.addEventListener('load', function() {
     console.log('Página de contacto cargada.');
     mostrarUltimaConsulta();
+    cargarVotosCheckGuardados();
+    
+    // Verificar si ya votó en esta sesión
+    if (localStorage.getItem('yaVotoCheckSesion')) {
+        checkboxes.forEach(checkbox => {
+            checkbox.disabled = true;
+        });
+        btnVotarCheck.disabled = true;
+        btnVotarCheck.textContent = 'Ya votaste';
+    }
+});
+
+// =============================================
+// ENCUESTA CON CHECKBOX
+// =============================================
+
+// Capturar elementos de la encuesta con checkbox
+const btnVotarCheck = document.querySelector('#btnVotarCheck');
+const checkboxes = document.querySelectorAll('#formularioEncuesta input[type="checkbox"]');
+const mensajeGraciasCheck = document.querySelector('#mensajeGraciasCheck');
+const resultadoVotosCheck = document.querySelector('#resultadoVotosCheck');
+const contenidoResultadoCheck = document.querySelector('#contenidoResultadoCheck');
+
+// Objeto para guardar los votos de checkboxes
+let votosCheck = {
+    'Sí, muy clara': 0,
+    'Más o menos': 0,
+    'No, fue confusa': 0,
+    'Faltaron ejemplos': 0
+};
+
+// Cargar votos guardados al iniciar
+function cargarVotosCheckGuardados() {
+    let votosGuardados = localStorage.getItem('votosEncuestaCheck');
+    if (votosGuardados) {
+        votosCheck = JSON.parse(votosGuardados);
+        mostrarResultadosCheck();
+    }
+}
+
+// Guardar votos en localStorage
+function guardarVotosCheck() {
+    localStorage.setItem('votosEncuestaCheck', JSON.stringify(votosCheck));
+}
+
+// Mostrar resultados en la página
+function mostrarResultadosCheck() {
+    let total = votosCheck['Sí, muy clara'] + 
+                votosCheck['Más o menos'] + 
+                votosCheck['No, fue confusa'] +
+                votosCheck['Faltaron ejemplos'];
+    
+    if (total > 0) {
+        resultadoVotosCheck.classList.remove('d-none');
+        
+        let html = `
+            <div class="mb-2">
+                <span class="fw-bold">✅ Sí, muy clara:</span> 
+                ${votosCheck['Sí, muy clara']} voto(s) (${Math.round(votosCheck['Sí, muy clara'] * 100 / total)}%)
+            </div>
+            <div class="mb-2">
+                <span class="fw-bold">🔄 Más o menos:</span> 
+                ${votosCheck['Más o menos']} voto(s) (${Math.round(votosCheck['Más o menos'] * 100 / total)}%)
+            </div>
+            <div class="mb-2">
+                <span class="fw-bold">❌ No, fue confusa:</span> 
+                ${votosCheck['No, fue confusa']} voto(s) (${Math.round(votosCheck['No, fue confusa'] * 100 / total)}%)
+            </div>
+            <div class="mb-2">
+                <span class="fw-bold">📚 Faltaron ejemplos:</span> 
+                ${votosCheck['Faltaron ejemplos']} voto(s) (${Math.round(votosCheck['Faltaron ejemplos'] * 100 / total)}%)
+            </div>
+            <hr>
+            <div class="fw-bold">Total de votos: ${total}</div>
+        `;
+        
+        contenidoResultadoCheck.innerHTML = html;
+    }
+}
+
+// Evento para votar con checkboxes
+btnVotarCheck.addEventListener('click', function() {
+    let algunaSeleccionada = false;
+    let seleccionadas = [];
+    
+    // Verificar qué checkboxes están seleccionados
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            algunaSeleccionada = true;
+            
+            // Identificar qué opción se seleccionó según su name
+            if (checkbox.name === 'opinion_clara') {
+                votosCheck['Sí, muy clara']++;
+                seleccionadas.push('Sí, muy clara');
+            } else if (checkbox.name === 'opinion_masomenos') {
+                votosCheck['Más o menos']++;
+                seleccionadas.push('Más o menos');
+            } else if (checkbox.name === 'opinion_confusa') {
+                votosCheck['No, fue confusa']++;
+                seleccionadas.push('No, fue confusa');
+            } else if (checkbox.name === 'opinion_ejemplos') {
+                votosCheck['Faltaron ejemplos']++;
+                seleccionadas.push('Faltaron ejemplos');
+            }
+        }
+    });
+    
+    if (algunaSeleccionada) {
+        // Guardar en localStorage
+        guardarVotosCheck();
+        
+        // Mostrar resultados
+        mostrarResultadosCheck();
+        
+        // Mostrar mensaje de agradecimiento
+        mensajeGraciasCheck.classList.remove('d-none');
+        
+        // Mostrar qué opciones eligió en consola
+        console.log('Opciones seleccionadas en encuesta:', seleccionadas);
+        
+        // Deshabilitar checkboxes y botón
+        checkboxes.forEach(checkbox => {
+            checkbox.disabled = true;
+        });
+        btnVotarCheck.disabled = true;
+        btnVotarCheck.textContent = 'Gracias por votar';
+        
+        // Guardar en sesión que ya votó
+        localStorage.setItem('yaVotoCheckSesion', 'true');
+        
+        // Ocultar mensaje de gracias después de 3 segundos
+        setTimeout(function() {
+            mensajeGraciasCheck.classList.add('d-none');
+        }, 3000);
+        
+    } else {
+        alert('Por favor, seleccioná al menos una opción antes de votar.');
+    }
 });

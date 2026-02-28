@@ -12,7 +12,7 @@
 <header>
   <div class="container-fluid p-0">
     <div class="position-relative">
-      <img src="../Final-informatica/imagenes/banner.png" 
+      <img src="merienda/imagenes/banner-reposteria.png" 
            class="w-100" 
            style="height:400px; object-fit:cover;" 
            alt="Contacto">
@@ -81,8 +81,8 @@
               <!-- Nacionales -->
         <li class="nav-item dropdown d-flex align-items-center">
           <a class="nav-link" href="nacionales/index.html">Nacionales</a>
-          <a class="nav-link dropdown-toggle" href="#" id="meriendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-          <ul class="dropdown-menu text-center" aria-labelledby="meriendasDropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="NacionalesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu text-center" aria-labelledby="NacionalesDropdown">
             <li><a class="dropdown-item" href="nacionales/platos.html">Platos</a></li>
             <li><a class="dropdown-item" href="nacionales/postres.html">Postres</a></li>
       </ul>
@@ -103,128 +103,165 @@
   </div>
 </nav>
 
-<!-- FORMULARIO -->
-<section class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-md-8 col-lg-6">
 
-      <div class="card shadow-sm border-0">
-        <div class="card-header bg-success text-white text-center">
-          <h2 class="h4 mb-0">Formulario de Contacto</h2>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                
+                <!-- ========================================= -->
+                <!-- TARJETA DE CONTACTO (FORMULARIO PRINCIPAL) -->
+                <!-- ========================================= -->
+                <div class="card shadow border-0 mb-4">
+                    <div class="card-header bg-primary text-white py-3">
+                        <h1 class="h3 mb-0 text-center">Contacto</h1>
+                    </div>
+                    
+                    <div class="card-body p-4">
+                        <p class="text-secondary text-center mb-4">Completá el formulario para enviarnos tu consulta.</p>
+                        
+                        <!-- FORMULARIO DE CONTACTO -->
+                        <form id="formularioContacto" action="#" method="POST" novalidate>
+                            
+                            <!-- Campo Nombre -->
+                            <div class="mb-4">
+                                <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+                                <div class="text-danger small mt-1" id="errorNombre"></div>
+                            </div>
+                            
+                            <!-- Campo Email -->
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Ej. juan@ejemplo.com">
+                                <div class="text-danger small mt-1" id="errorEmail"></div>
+                            </div>
+                            
+                            <!-- Campo Asunto -->
+                            <div class="mb-4">
+                                <label for="asunto" class="form-label fw-semibold">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Motivo de tu consulta">
+                                <div class="text-danger small mt-1" id="errorAsunto"></div>
+                            </div>
+                            
+                            <!-- Campo Mensaje -->
+                            <div class="mb-4">
+                                <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..."></textarea>
+                                <div class="text-danger small mt-1" id="errorMensaje"></div>
+                            </div>
+                            
+                            <!-- Botón de envío -->
+                            <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold" id="btnEnviar">
+                                Enviar Consulta
+                            </button>
+                        </form>
+                        
+                        <!-- Mensaje de éxito -->
+                        <div id="mensajeExito" class="alert alert-success mt-4 d-none" role="alert">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            ✅ ¡Gracias por contactarnos! Tu mensaje fue enviado con éxito.
+                        </div>
+                        
+                        <!-- Última consulta guardada -->
+                        <div id="ultimaConsulta" class="alert alert-secondary mt-4 d-none" role="alert">
+                            <h6 class="alert-heading fw-bold mb-2">📋 Última consulta guardada:</h6>
+                            <p id="datosUltimaConsulta" class="mb-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================= -->
+                <!-- ENCUESTA CON CHECKBOX (múltiple opción) -->
+                <!-- ========================================= -->
+                <div class="card shadow border-0">
+                    <div class="card-header bg-success text-white py-3">
+                        <h2 class="h4 mb-0 text-center">📝 Encuesta rápida</h2>
+                    </div>
+                    
+                    <div class="card-body p-4">
+                        <p class="text-secondary text-center mb-4 fw-semibold">
+                            ¿La información de las páginas te pareció clara y fácil de entender?
+                        </p>
+                        
+                        <form id="formularioEncuesta">
+                            
+                            <!-- CHECKBOX - cada opción tiene name DISTINTO -->
+                            <div class="d-flex flex-column gap-3 mb-4">
+                                
+                                <!-- Opción 1: Sí, muy clara -->
+                                <div class="form-check p-3 border rounded">
+                                    <input class="form-check-input" type="checkbox" 
+                                           name="opinion_clara" id="check1" value="si">
+                                    <label class="form-check-label w-100" for="check1">
+                                        <span class="fw-bold">✅ Sí, muy clara</span>
+                                        <small class="d-block text-secondary mt-1">La información se entiende perfectamente</small>
+                                    </label>
+                                </div>
+                                
+                                <!-- Opción 2: Más o menos -->
+                                <div class="form-check p-3 border rounded">
+                                    <input class="form-check-input" type="checkbox" 
+                                           name="opinion_masomenos" id="check2" value="si">
+                                    <label class="form-check-label w-100" for="check2">
+                                        <span class="fw-bold">🔄 Más o menos</span>
+                                        <small class="d-block text-secondary mt-1">Algunas cosas claras, otras no tanto</small>
+                                    </label>
+                                </div>
+                                
+                                <!-- Opción 3: No, fue confusa -->
+                                <div class="form-check p-3 border rounded">
+                                    <input class="form-check-input" type="checkbox" 
+                                           name="opinion_confusa" id="check3" value="si">
+                                    <label class="form-check-label w-100" for="check3">
+                                        <span class="fw-bold">❌ No, fue confusa</span>
+                                        <small class="d-block text-secondary mt-1">Me costó entender la información</small>
+                                    </label>
+                                </div>
+                                
+                                <!-- Opción 4: Me gustaría más ejemplos -->
+                                <div class="form-check p-3 border rounded">
+                                    <input class="form-check-input" type="checkbox" 
+                                           name="opinion_ejemplos" id="check4" value="si">
+                                    <label class="form-check-label w-100" for="check4">
+                                        <span class="fw-bold">📚 Faltaron ejemplos</span>
+                                        <small class="d-block text-secondary mt-1">Necesito más ejemplos prácticos</small>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Botón para enviar encuesta -->
+                            <button type="button" class="btn btn-outline-success w-100 py-2" id="btnVotarCheck">
+                                Enviar mi opinión
+                            </button>
+                        </form>
+                        
+                        <!-- Mensaje de agradecimiento -->
+                        <div id="mensajeGraciasCheck" class="alert alert-info mt-4 d-none" role="alert">
+                            <i class="bi bi-heart-fill me-2"></i>
+                            ¡Gracias por tu opinión! Nos ayuda a mejorar.
+                        </div>
+                        
+                        <!-- Resultado de votos -->
+                        <div id="resultadoVotosCheck" class="mt-4 p-3 bg-light rounded d-none">
+                            <h6 class="fw-bold mb-3">📊 Resultados hasta ahora:</h6>
+                            <div id="contenidoResultadoCheck"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer bg-white text-center py-3">
+                        <small class="text-secondary">Informática General - Cátedra Drelichman</small>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="card-body p-4">
-
-          <p class="text-secondary text-center mb-4">
-            Completá el formulario para enviarnos tu consulta.
-          </p>
-
-          <form id="formularioContacto" novalidate>
-
-            <div class="mb-3">
-              <label class="form-label fw-semibold">Nombre completo</label>
-              <input type="text" class="form-control" id="nombre">
-              <div class="text-danger small" id="errorNombre"></div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label fw-semibold">Correo electrónico</label>
-              <input type="email" class="form-control" id="email">
-              <div class="text-danger small" id="errorEmail"></div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label fw-semibold">Asunto</label>
-              <input type="text" class="form-control" id="asunto">
-              <div class="text-danger small" id="errorAsunto"></div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label fw-semibold">Mensaje</label>
-              <textarea class="form-control" rows="4" id="mensaje"></textarea>
-              <div class="text-danger small" id="errorMensaje"></div>
-            </div>
-
-            <button type="submit" class="btn btn-success w-100">
-              Enviar Consulta
-            </button>
-
-          </form>
-
-          <div id="mensajeExito" class="alert alert-success mt-4 d-none">
-            ✅ ¡Tu mensaje fue enviado correctamente!
-          </div>
-
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
 
-<!-- FOOTER IGUAL -->
-<footer class="bg-dark text-white text-center py-3">
-  <p class="nav-item">
-    Si queres saber quien esta atras del proyecto apreta aquí <a class="nav-link text-white" href="formulario.html">Contacto</a> </p> 
-  </p>
-</footer>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- VALIDACIÓN JS -->
-<script>
-document.getElementById("formularioContacto").addEventListener("submit", function(event){
-
-  event.preventDefault();
-
-  // limpiar errores
-  document.getElementById("errorNombre").innerHTML = "";
-  document.getElementById("errorEmail").innerHTML = "";
-  document.getElementById("errorAsunto").innerHTML = "";
-  document.getElementById("errorMensaje").innerHTML = "";
-
-  let nombre = document.getElementById("nombre").value.trim();
-  let email = document.getElementById("email").value.trim();
-  let asunto = document.getElementById("asunto").value.trim();
-  let mensaje = document.getElementById("mensaje").value.trim();
-
-  let valido = true;
-
-  if(nombre === ""){
-    document.getElementById("errorNombre").innerHTML = "El nombre es obligatorio";
-    valido = false;
-  }
-
-  if(email === ""){
-    document.getElementById("errorEmail").innerHTML = "El email es obligatorio";
-    valido = false;
-  } else if(!email.includes("@") || !email.includes(".")){
-    document.getElementById("errorEmail").innerHTML = "Email inválido";
-    valido = false;
-  }
-
-  if(asunto === ""){
-    document.getElementById("errorAsunto").innerHTML = "El asunto es obligatorio";
-    valido = false;
-  }
-
-  if(mensaje === ""){
-    document.getElementById("errorMensaje").innerHTML = "El mensaje es obligatorio";
-    valido = false;
-  }
-
-  if(valido){
-    let cuerpo = "Nombre: " + nombre + "%0D%0A" +
-                 "Email: " + email + "%0D%0A%0D%0A" +
-                 "Mensaje:%0D%0A" + mensaje;
-
-    window.location.href = "mailto:TUEMAIL@gmail.com?subject=" + asunto + "&body=" + cuerpo;
-
-    document.getElementById("mensajeExito").classList.remove("d-none");
-  }
-
-});
-</script>
-
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
