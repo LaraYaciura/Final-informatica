@@ -82,16 +82,11 @@ h1 {
 .intro-section {
   padding: 2rem 1rem;
 }
-
 /* ===== CAROUSEL ===== */
-.carousel-custom {
-  width: 75%;
-}
-
-@media (max-width: 768px) {
-  .carousel-custom {
-    width: 100%;
-  }
+/* Quitamos alturas forzadas */
+.carousel-item img {
+  width: 100%;
+  height: auto;
 }
 
 /* ===== CARDS ===== */
@@ -99,10 +94,19 @@ h1 {
   font-size: 1.1rem;
 }
 
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
-  .card-title {
-    font-size: 1rem;
+  .card img {
+    height: 160px;
   }
+}
+.card {
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 /* ===== FOOTER LINKS ===== */
@@ -113,3 +117,4 @@ h1 {
 .footer-link:hover {
   text-decoration: underline;
 }
+
